@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from "./App";
 import reportWebVitals from './reportWebVitals';
-import Test3 from "./ts_test/test3";
+import App from "./App";
+import Test1 from "./ts_test/Test1";
+import Test2 from "./ts_test/Test2";
+import Test3 from "./ts_test/Test3";
+import Test4 from "./ts_test/Test4";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {false && <App />}
+    <Test1 />
+    <hr />
+    <Test2 />
+    <hr />
     <Test3 />
+    <hr />
+    <Test4 />
+    <hr />
   </React.StrictMode>
 );
 

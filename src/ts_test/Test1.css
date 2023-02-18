@@ -1,0 +1,13 @@
+.borderDesc {
+    border: thick double #32a1ce;
+}
+
+.itemsContainer {
+    background-color: #bbffcc;
+    display: flex;
+}
+
+.todoItems {
+    background-color: antiquewhite;
+    margin: 5px 10px;
+  }
