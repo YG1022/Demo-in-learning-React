@@ -29,7 +29,7 @@ export default function Test1() {
       This is Test1!
       <div className="itemsContainer borderDesc">
         {todoItems.map((item) => (
-          <div className="todoItems borderDesc">
+          <div key={item.date} className="todoItems borderDesc">
             <div>{item.date}</div>
             <div>{item.title}</div>
             <div>{item.duration}</div>
