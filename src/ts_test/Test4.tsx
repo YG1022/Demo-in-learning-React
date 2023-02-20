@@ -58,7 +58,7 @@ const Test4 = () => {
                 <button onClick={() => addCar()}>Add</button>
             </div>
             <div className="cars-board">
-                { carsDisplayInfo }
+                {carsDisplayInfo}
             </div>
         </div>
     )

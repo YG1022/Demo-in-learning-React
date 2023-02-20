@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const Test3 = () => {
     const [status, setStatus] = useState<boolean>(false);
@@ -10,7 +10,7 @@ const Test3 = () => {
     return (
         <div>
             <span>This is Test3!</span>
-            <br/>
+            <br />
             <span>{status ? "Hey!!!" : "What???"}</span>
             <div>
                 <button onClick={toggleStatus}>Toggle</button>
