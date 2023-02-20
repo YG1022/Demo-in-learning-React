@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
 import App from "./App";
 import Test1 from "./ts_test/Test1";
 import Test2 from "./ts_test/Test2";
 import Test3 from "./ts_test/Test3";
 import Test4 from "./ts_test/Test4";
+import Test5 from "./ts_test/store/Test5";
+import store from "./ts_test/store/store"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +23,9 @@ root.render(
     <hr />
     <Test4 />
     <hr />
+    <Provider store={store}>
+        <Test5 />
+    </Provider>
   </React.StrictMode>
 );
 
