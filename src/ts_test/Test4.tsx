@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 interface CarType {
     id: number;
@@ -55,12 +55,10 @@ const Test4 = () => {
         <div>
             <div>
                 <input type="text" id="car-input" />
-            </div>
-            <div>
-                <button onClick={() => addCar}>Add</button>
+                <button onClick={() => addCar()}>Add</button>
             </div>
             <div className="cars-board">
-                {carsDisplayInfo}
+                { carsDisplayInfo }
             </div>
         </div>
     )
