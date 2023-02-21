@@ -9,7 +9,7 @@ import Test2 from "./ts_test/Test2";
 import Test3 from "./ts_test/Test3";
 import Test4 from "./ts_test/Test4";
 import Test5 from "./ts_test/Test5";
-import store from "./ts_test/store"
+import store from "./ts_test/store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
