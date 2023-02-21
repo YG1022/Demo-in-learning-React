@@ -2,7 +2,11 @@ import React from 'react';
 import { useGetStudentsQuery } from './queryStore/studentApi';
 
 const Test6 = (): JSX.Element => {
-    const { data, isSuccess, isLoading } = useGetStudentsQuery('');
+    const { data, isSuccess, isLoading } = useGetStudentsQuery('') as {
+        data: { text: string };
+        isSuccess: boolean;
+        isLoading: boolean;
+    };
 
     return (
         <div>

@@ -11,6 +11,9 @@ const studentApi = createApi({
                 query() {
                     return '/text';
                 },
+                transformErrorResponse(baseQueryReturnValue, meta, arg) {
+                    return baseQueryReturnValue;
+                },
             }),
         };
     },
