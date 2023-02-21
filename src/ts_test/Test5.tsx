@@ -7,7 +7,7 @@ import { setSchName } from './store/schSlice';
 
 let count: number = 1;
 
-const Test5 = () => {
+const Test5 = (): JSX.Element => {
     // const student = useSelector((state: stateType) => state.student) as stuType;
     // const school = useSelector((state: stateType) => state.school) as schType;
     const { student, school } = useSelector((state: stateType) => state);
