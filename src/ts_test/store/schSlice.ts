@@ -1,15 +1,15 @@
-import { Slice, createSlice } from "@reduxjs/toolkit";
+import { Slice, createSlice } from '@reduxjs/toolkit';
 
 export interface schType {
-    name: string,
-    address: string
+    name: string;
+    address: string;
 }
 
 const schSlice: Slice = createSlice({
-    name: "sch",
+    name: 'sch',
     initialState: {
-        name: "Empiror",
-        address: "Locating"
+        name: 'Empiror',
+        address: 'Locating',
     },
     reducers: {
         setSchName(state, action) {
@@ -17,8 +17,8 @@ const schSlice: Slice = createSlice({
         },
         setAddress(state, action) {
             state.address = action.payload;
-        }
-    }
+        },
+    },
 });
 
 export const { setSchName, setSchAddress } = schSlice.actions;

@@ -1,17 +1,17 @@
-import { Slice, createSlice } from "@reduxjs/toolkit";
+import { Slice, createSlice } from '@reduxjs/toolkit';
 
 export interface stuType {
-    name: string,
-    age: number,
-    gender: string
+    name: string;
+    age: number;
+    gender: string;
 }
 
 const stuSlice: Slice = createSlice({
-    name: "stu",
+    name: 'stu',
     initialState: {
-        name: "Jenkins",
+        name: 'Jenkins',
         age: 12,
-        gender: "male"
+        gender: 'male',
     },
     reducers: {
         setStuName(state, action) {
@@ -19,8 +19,8 @@ const stuSlice: Slice = createSlice({
         },
         setStuAge(state, action) {
             state.age = action.payload;
-        }
-    }
+        },
+    },
 });
 
 export const { setStuName, setStuAge } = stuSlice.actions;

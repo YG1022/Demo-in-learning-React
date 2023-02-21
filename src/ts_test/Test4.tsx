@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 interface CarType {
     id: number;
@@ -23,33 +23,33 @@ class Car implements CarType {
 }
 
 const Test4 = () => {
-    const testCar = new Car(1, "Jetta", 10, "red");
+    const testCar = new Car(1, 'Jetta', 10, 'red');
     const [carsList, setCarsList] = useState<CarType[]>([testCar]);
 
     const addCar = (): void => {
-        const carInput: HTMLInputElement = document.getElementById("car-input") as HTMLInputElement;
+        const carInput: HTMLInputElement = document.getElementById('car-input') as HTMLInputElement;
 
-        const inputDetail = String(carInput.value).split(",");
-        const newCar: CarType = new Car(parseInt(inputDetail[0]), inputDetail[1], parseInt(inputDetail[2]), inputDetail[3]);
+        const inputDetail = String(carInput.value).split(',');
+        const newCar: CarType = new Car(
+            parseInt(inputDetail[0]),
+            inputDetail[1],
+            parseInt(inputDetail[2]),
+            inputDetail[3]
+        );
 
-        carInput.value = "";
+        carInput.value = '';
 
-        setCarsList((preList: CarType[]) => ([...preList, newCar]));
+        setCarsList((preList: CarType[]) => [...preList, newCar]);
     };
-    const deleteCar = (id: number): void => (
-        setCarsList((preList: CarType[]) => (
-            preList.filter((perCar: CarType) => (perCar.id !== id))
-        ))
-    );
+    const deleteCar = (id: number): void =>
+        setCarsList((preList: CarType[]) => preList.filter((perCar: CarType) => perCar.id !== id));
 
-    const carsDisplayInfo: JSX.Element[] = carsList.map(
-        (item: CarType) => (
-            <div key={item.id}>
-                {`${item.id} - ${item.category} - ${item.horsepower} - ${item.color}`}
-                <button onClick={() => deleteCar(item.id)}>Delete</button>
-            </div>
-        )
-    );
+    const carsDisplayInfo: JSX.Element[] = carsList.map((item: CarType) => (
+        <div key={item.id}>
+            {`${item.id} - ${item.category} - ${item.horsepower} - ${item.color}`}
+            <button onClick={() => deleteCar(item.id)}>Delete</button>
+        </div>
+    ));
 
     return (
         <div>
@@ -57,11 +57,9 @@ const Test4 = () => {
                 <input type="text" id="car-input" />
                 <button onClick={() => addCar()}>Add</button>
             </div>
-            <div className="cars-board">
-                {carsDisplayInfo}
-            </div>
+            <div className="cars-board">{carsDisplayInfo}</div>
         </div>
-    )
-}
+    );
+};
 
 export default Test4;
