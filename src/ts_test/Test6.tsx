@@ -1,12 +1,24 @@
 import React from 'react';
 import { useGetStudentsQuery } from './queryStore/studentApi';
 
-const Test6 = (): JSX.Element => {
-    const { data, isSuccess, isLoading } = useGetStudentsQuery('') as {
-        data: { text: string };
-        isSuccess: boolean;
-        isLoading: boolean;
+type stuQuery = {
+    data: {
+        text: string;
     };
+    isSuccess: boolean;
+    isLoading: boolean;
+};
+
+const Test6 = (): JSX.Element => {
+    // const queryData = useGetStudentsQuery('', {
+    //     pollingInterval: 0,
+    //     skip: false,
+    //     refetchOnMountOrArgChange: false,
+    //     refetchOnFocus: false,
+    // });
+    // console.log(queryData);
+
+    const { data, isSuccess, isLoading } = useGetStudentsQuery('') as stuQuery;
 
     return (
         <div>
