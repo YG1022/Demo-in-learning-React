@@ -12,6 +12,7 @@ import Test5 from './ts_test/Test5';
 import Test6 from './ts_test/Test6';
 import store from './ts_test/store';
 import queryStore from './ts_test/queryStore';
+import Test7, { Test7Store } from './ts_test/Test7';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,10 @@ root.render(
         <hr />
         <Provider store={queryStore}>
             <Test6 />
+        </Provider>
+        <hr />
+        <Provider store={Test7Store}>
+            <Test7 />
         </Provider>
     </React.StrictMode>
 );
