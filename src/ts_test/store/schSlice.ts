@@ -15,7 +15,7 @@ const schSlice: Slice = createSlice({
         setSchName(state, action) {
             state.name = action.payload;
         },
-        setAddress(state, action) {
+        setSchAddress(state, action) {
             state.address = action.payload;
         },
     },
