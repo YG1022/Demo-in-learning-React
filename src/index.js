@@ -13,31 +13,37 @@ import Test6 from './ts_test/Test6';
 import store from './ts_test/store';
 import queryStore from './ts_test/queryStore';
 import Test7, { Test7Store } from './ts_test/Test7';
+import { RecoilRoot } from 'recoil';
+import Test8 from './ts_test/Test8';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        {false && <App />}
-        <Test1 />
+        <RecoilRoot>
+            {false && <App />}
+            {/* <Test1 />
         <hr />
         <Test2 />
         <hr />
         <Test3 />
         <hr />
         <Test4 />
-        <hr />
-        <Provider store={store}>
-            <Test5 />
-        </Provider>
-        <hr />
-        <Provider store={queryStore}>
-            <Test6 />
-        </Provider>
-        <hr />
-        <Provider store={Test7Store}>
-            <Test7 />
-        </Provider>
-    </React.StrictMode>
+        <hr /> */}
+            <Provider store={store}>
+                <Test5 />
+            </Provider>
+            <hr />
+            <Provider store={queryStore}>
+                <Test6 />
+            </Provider>
+            <hr />
+            <Provider store={Test7Store}>
+                <Test7 />
+            </Provider>
+            <hr />
+            <Test8 />
+        </RecoilRoot>
+    </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
