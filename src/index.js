@@ -15,6 +15,7 @@ import queryStore from './ts_test/queryStore';
 import Test7, { Test7Store } from './ts_test/Test7';
 import { RecoilRoot } from 'recoil';
 import Test8 from './ts_test/Test8';
+import Test9 from './ts_test/Test9';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -42,8 +43,10 @@ root.render(
             </Provider>
             <hr />
             <Test8 />
+            <hr />
+            <Test9 />
         </RecoilRoot>
-    </React.StrictMode>,
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
