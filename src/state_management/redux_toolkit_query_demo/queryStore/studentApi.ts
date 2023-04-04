@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react'
 
 const studentApi = createApi({
     reducerPath: 'studentApi',
@@ -11,7 +11,7 @@ const studentApi = createApi({
                 query() {
                     return '/text';
                 },
-                transformErrorResponse(baseQueryReturnValue, meta, arg) {
+                transformErrorResponse(baseQueryReturnValue) {
                     return baseQueryReturnValue;
                 },
             }),
