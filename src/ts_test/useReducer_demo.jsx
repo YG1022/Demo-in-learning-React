@@ -11,7 +11,7 @@ const reducer = (state, action) => {
     }
 };
 
-export default function Test2() {
+export default function UseReducer_demo() {
     const [count, countDispatch] = useReducer(reducer, 1);
 
     return (

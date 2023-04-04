@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Test3 = () => {
+const UseState_demo = () => {
     const [status, setStatus] = useState<boolean>(false);
 
     const toggleStatus = () => {
@@ -19,4 +19,4 @@ const Test3 = () => {
     );
 };
 
-export default Test3;
+export default UseState_demo;

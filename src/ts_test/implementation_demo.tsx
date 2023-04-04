@@ -22,7 +22,7 @@ class Car implements CarType {
     }
 }
 
-const Test4 = () => {
+const Implementation_demo = () => {
     const testCar = new Car(1, 'Jetta', 10, 'red');
     const [carsList, setCarsList] = useState<CarType[]>([testCar]);
 
@@ -62,4 +62,4 @@ const Test4 = () => {
     );
 };
 
-export default Test4;
+export default Implementation_demo;

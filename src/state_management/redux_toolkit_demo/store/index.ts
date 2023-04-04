@@ -8,11 +8,11 @@ export interface stateType {
     school: schType;
 }
 
-const store: ToolkitStore = configureStore({
+const toolkitStore: ToolkitStore = configureStore({
     reducer: {
         student: stuReducer,
         school: schReducer,
     },
 });
 
-export default store;
+export default toolkitStore;

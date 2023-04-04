@@ -1,6 +1,6 @@
-import './Test1.css';
+import './array_map_demo.css';
 
-export default function Test1() {
+export default function Array_map_demo() {
     const todoItems = [
         {
             date: '三月22',
@@ -26,7 +26,7 @@ export default function Test1() {
 
     return (
         <div className="Test1">
-            This is Test1!
+            This is Array_map_demo!
             <div className="itemsContainer borderDesc">
                 {todoItems.map(item => (
                     <div key={item.date} className="todoItems borderDesc">

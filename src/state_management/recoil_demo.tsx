@@ -14,7 +14,7 @@ const countState = selector({
     },
 });
 
-const Test8: React.FC = () => {
+const Recoil_demo: React.FC = () => {
     const [text, setText] = useRecoilState(textState);
     const count = useRecoilValue(countState);
     const reset = useResetRecoilState(textState);
@@ -37,4 +37,4 @@ const Test8: React.FC = () => {
     );
 };
 
-export default Test8;
+export default Recoil_demo;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {useStore} from './zustandStore/useStore';
 
-const Test9 = () => {
+const Zustand_demo = () => {
     const ShowCount = () => {
         const count = useStore(state => state.count);
         return <div>count: {count}</div>;
@@ -38,4 +38,4 @@ const Test9 = () => {
     );
 };
 
-export default Test9;
+export default Zustand_demo;

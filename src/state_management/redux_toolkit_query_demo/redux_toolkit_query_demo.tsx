@@ -9,7 +9,7 @@ type stuQuery = {
     isLoading: boolean;
 };
 
-const Test6 = (): JSX.Element => {
+const Redux_toolkit_query_demo = (): JSX.Element => {
     // const queryData = useGetStudentsQuery('', {
     //     pollingInterval: 0,
     //     skip: false,
@@ -29,4 +29,4 @@ const Test6 = (): JSX.Element => {
     );
 };
 
-export default Test6;
+export default Redux_toolkit_query_demo;
