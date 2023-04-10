@@ -17,4 +17,8 @@ const joinChoir = (animal: animal): void => {
 }
 
 joinChoir(duck)
+// join the choir
+// the member of the choir 1
 joinChoir(chicken)
+// join the choir
+// the member of the choir 2
