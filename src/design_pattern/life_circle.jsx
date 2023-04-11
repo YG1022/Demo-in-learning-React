@@ -5,8 +5,8 @@ const LifeCircle = () => {
   console.log(nodes)
 
   for (let i = 0; i < nodes.length; i++) {
-    nodes[i].onclick = function() {
-      console.log(i)
+    nodes[i].onclick = function () {
+      console.log(i + 1) // 1 2 3 4 5
     }
   }
 
